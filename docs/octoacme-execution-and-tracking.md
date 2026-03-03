@@ -15,6 +15,7 @@ Guidance for managing day-to-day execution and tracking progress toward project 
   - Include issue link and acceptance criteria in PR description
   - Run automated tests and linting in CI before requesting review
   - Require at least one approval before merging (or team-defined policy)
+  - Follow the full **[PR / CI gating checklist](checklists/pr-checklist.md)** before marking a PR ready for review
 
 ## Quality & Testing
 - Unit tests for new logic
@@ -34,7 +35,17 @@ Guidance for managing day-to-day execution and tracking progress toward project 
 - Level 3: Sponsor-level escalation for business-impacting issues
 
 ## Execution Checklist
-- [ ] Branching and PR conventions documented in repo
-- [ ] CI configured for tests and lint
-- [ ] Regular demos scheduled
-- [ ] Risk register updated weekly
+- [ ] Branching and PR conventions documented in repo — **Owner: Developer**
+- [ ] CI configured for tests and lint — **Owner: DevOps Engineer**
+- [ ] Regular demos scheduled — **Owner: Project Manager**
+- [ ] Risk register updated weekly — **Owner: Project Manager**
+- [ ] [PR Checklist](checklists/pr-checklist.md) reviewed and adopted by the team — **Owner: Developer / PM**
+- [ ] [Release Checklist](checklists/release-checklist.md) reviewed and assigned to release owner — **Owner: DevOps Engineer / PM**
+
+---
+
+## How this improves outcomes
+- **Explicit action owners**: Named owners for each checklist item eliminate ambiguity about who drives each activity.
+- **Consistent CI/CD gating**: Linking to the PR checklist ensures every contributor follows the same quality bar before requesting review.
+- **Reduced onboarding friction**: New team members have a clear, actionable list to follow from day one.
+- **Fewer escalations**: Clear ownership and checklists catch issues early, reducing reactive fire-fighting during sprints and releases.
